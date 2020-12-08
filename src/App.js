@@ -1,12 +1,12 @@
 import './App.css';
 
-import Main from './components/main'
+import RestaurantPage from './containers/Restaurants'
 import logo from './logo.svg';
 
 function App() {
   return (
     <div className="App">
-      <Main />
+      <RestaurantPage />
     </div>
   );
 }
