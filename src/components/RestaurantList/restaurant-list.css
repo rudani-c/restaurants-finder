@@ -1,0 +1,23 @@
+table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  line-height: 2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

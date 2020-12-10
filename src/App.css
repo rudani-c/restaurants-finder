@@ -1,45 +1,4 @@
 .App {
   text-align: center;
-  margin: 50px;
-}
-
-table {
-  margin-top: 30px;
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
-}
-
-thead {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-th,
-td {
-  text-align: left;
-  padding: 10px;
-  line-height: 2.5;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.restaurant-table {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.search input {
-  width: 85%;
-  line-height: 2;
-}
-
-.search button {
-  background-color: #000000;
-  font-weight: bold;
-  color: #ffffff;
-  line-height: 2;
+  margin: 40px;
 }

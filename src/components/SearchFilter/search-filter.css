@@ -1,0 +1,18 @@
+.search input {
+  width: 85%;
+  line-height: 2;
+}
+
+.search button {
+  background-color: #000000;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 2;
+  border-color: #000000;
+}
+
+.search button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}

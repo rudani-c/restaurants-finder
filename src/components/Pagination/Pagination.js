@@ -12,17 +12,17 @@ export const Pagination = ({ dataPerPage, totaldata, paginate, currentPage }) =>
     return (
         <nav>
             <div className="pagination">
-                <a href="#" onClick={() => paginate(1)}>&laquo;</a>
+                <a onClick={() => paginate(1)}>&laquo;</a>
                 {pageNumbers.map((number, index) => {
                     const applyStyle = [];
                     if (index === currentPage - 1) applyStyle.push('active')
                     return (
-                        <a className={applyStyle.join(" ")} key={number} onClick={() => paginate(number)} href='!#'>
+                        <a className={applyStyle.join(" ")} key={number} onClick={() => paginate(number)} >
                             {number}
                         </a>
                     )
                 })}
-                <a href="#" onClick={() => paginate(pageNumbers.length)}>&raquo;</a>
+                <a onClick={() => paginate(pageNumbers.length)}>&raquo;</a>
             </div>
         </nav>
     );
