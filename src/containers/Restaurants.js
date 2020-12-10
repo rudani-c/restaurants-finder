@@ -15,12 +15,12 @@ class RestaurantsContainer extends Component {
 
     render() {
         return (
-            <RestaurantList />
+            <RestaurantList restaurants={this.props.restaurants}/>
         )
     };
 }
 
-export default RestaurantPage = connect(
+export const RestaurantPage = connect(
     state => ({
         restaurants: state.restaurantReducer.restaurants
     }),

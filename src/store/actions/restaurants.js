@@ -1,5 +1,4 @@
 import { GET_RESTAURANT_URL } from '../../constants/urls';
-import axios from "axios";
 
 export const SET_RESTAURANTS = 'SET_RESTAURANTS';
 
@@ -8,14 +7,17 @@ const setRestaurants = (data) => ({
     restaurants: data,
   });
 
-const getRestaurants = (fetch) => {
+const getHeaders = () => ({
+    Authorization: 'Api-Key q3MNxtfep8Gt',
+    "Content-Type" : "application/json",
+});
+
+const fetchRestaurants = (fetch) => {
     return {
         getRestaurantDetails() {
             return async dispatch => {
                 const response = await fetch(GET_RESTAURANT_URL, { 
-                    headers: { 
-                        Authorization: 'Api-Key q3MNxtfep8Gt', 
-                    }, 
+                    headers: getHeaders(), 
                 });
                 if (response.status === 200) {
                     dispatch(setRestaurants(await response.json()));
@@ -25,4 +27,4 @@ const getRestaurants = (fetch) => {
     };
 }
 
-export const restaurantApiActions = getRestaurants(fetch);
+export const restaurantApiActions = fetchRestaurants(fetch);

@@ -1,7 +1,6 @@
 import './App.css';
 
-import RestaurantPage from './containers/Restaurants'
-import logo from './logo.svg';
+import { RestaurantPage } from './containers/Restaurants';
 
 function App() {
   return (
